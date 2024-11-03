@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Raleway, sans-serif;
+    font-variant-numeric: lining-nums proportional-nums
+}
+
+.main {
+    height: 1024px;
+    /*background: #FEDEA9; */
+    display: flex;
+    flex-direction: column;
+    background: url("korova.webp") no-repeat bottom right, #FEDEA9;
+}
+
+.nav {
+    padding-top: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    align-items: center;
+    width: 100%;
+}
+
+.links {
+    display: flex;
+    gap: 48px;
+}
+
+.link {
+    font-size: 24px;
+    color: #0F1421;
+    text-decoration: none;
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 16px;
+    margin: 0 auto;
+    max-width: 1620px;
+    width: 100%;
+    flex: 1;
+    justify-content: center;
+}
+
+h1, h2 {
+    font-size: 64px;
+    color: #5A231E;
+    font-weight: 700;
+}
+
+.offer-description {
+    font-size: 24px;
+    color: #0F1421;
+    max-width: 600px;
+    line-height: 36px;
+}
+
+.goods-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+
+}
+
+.goods {
+    max-width: 1620px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 86px;
+    padding: 180px 16px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .goods-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.goods-title {
+    text-align: center;
+}
+
+.good-card-title {
+    font-size: 24px;
+    color: #0F1421;
+    text-align: center;
+}
+
+.good-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.good-card-img {
+    border-radius: 24px;
+}
+
+.history {
+    height: 1257px;
+    background: url("abricosi.webp") no-repeat left;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.history-card {
+    padding: 100px;
+    border-radius: 32px;
+    background: rgba(255, 218, 162, 0.40);
+    backdrop-filter: blur(32px);
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.history-wrapper {
+    max-width: 1620px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 0 16px;
+    flex: 1;
+}
+
+.history-text {
+    display: flex;
+    gap: 24px;
+    max-width: 893px;
+}
+
+.polza-img {
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.reviews-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.review {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.reviews {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 80px;
+    flex-direction: column;
+    padding-top: 180px;
+}
+
+.review-title {
+    font-size: 24px;
+    color: #5A231E;
+    font-weight: 700
+}
+
+.review-text {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+}
+
+.form-text {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form {
+    max-width: 1620px;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: flex;
+    gap: 24px;
+    padding-top: 180px;
+    padding-bottom: 180px;
+    justify-content: space-between;
+}
+
+.form-wrapper {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    /*max-width: 798px;*/
+    /*width: 100%;*/
+    flex: 1;
+
+
+}
+
+.form-inputs {
+    display: flex;
+    gap: 24px;
+}
+
+.form-input, .form-textarea {
+    font-family: inherit;
+    padding: 32px;
+    font-size: 24px;
+    border: 1px #5A231E solid;
+    color: #0F1421;
+}
+
+.form-input[name="name"] {
+    width: 33%
+}
+
+.form-input[name="email"] {
+    flex-grow: 2
+}
+
+.form-input::placeholder, .form-textarea::placeholder {
+    color: #9E9E9E
+}
+
+.form-textarea {
+    resize: none;
+
+
+}
+
+.form-button {
+    font-family: inherit;
+    padding: 24px;
+    font-size: 24px;
+    border: none;
+    color: #FFE1B4;
+    background-color: #5A231E;
+    border-radius: 20px;
+    transition: .3s transform ease-in-out;
+}
+
+.form-button:hover {
+    transform: scale(1.01);
+}
+
+.form-button:active {
+    transform: scale(0.97);
+}
+
+.footer {
+    background-color: #5A231E;
+    display: flex;
+    align-items: center;
+    padding: 56px 0;
+}
+
+@media screen and (max-width: 800px) {
+    .footer-info {
+        flex-direction: column;
+    }
+}
+
+.footer-info {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 1620px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 48px;
+    width: 100%;
+}
+
+.footer-text {
+    font-size: 24px;
+    color: #FFE1B4;
+    max-width: 448px;
+    line-height: 36px;
+    text-decoration: none;
+
+}
+
+.footer-icons {
+    display: flex;
+    gap: 32px;
+}
+
